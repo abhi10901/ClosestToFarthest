@@ -1,0 +1,33 @@
+Test case 1:
+	input: enter value for x or y as invalid number -> a
+	output: Not a valid number.
+	
+Test case 2: 
+	input: if input json file (coordinates.json) is not there
+	output: Input file not found in current working directory.
+	
+Test case 3:
+	input: origin is good, input coordinates.json file is there, but json file is not in valid format
+	output: Can not parse given json file. Not a valid format json.
+	
+Test case 4:
+	input: origin (0, 0)
+	coordinates: a (3,5)
+				 b (2,2)
+				 c (1,10)
+				 
+	output: coordinates: b (2,2)
+						 a (3,5)
+						 c (1,10)
+						 
+Test case 5:
+	input: origin (-4, 9)
+	coordinates: a (3,5)
+				 b (2,2)
+				 c (1,10)
+				 
+	output: coordinates: c (1,10)
+				 		 a (3,5)
+				         b (2,2)
+				         
+ Output coordinates are changing based on origin. 
